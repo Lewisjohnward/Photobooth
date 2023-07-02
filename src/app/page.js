@@ -120,8 +120,10 @@ const Video = ({photoTaken, setPhotoTaken, webcamAccepted, videoRef, effect, cha
             <div className="relative -mt-6 w-full flex justify-center items-center gap-4 [&_*]:text-2xl">
                 <div className="relative flex justify-center">
                     {settingsVisible && <Settings />}
-                    <Button>
-                        <IoSettings onClick={() => setSettingsVisible(prev => !prev)}/>
+                    <Button
+                         onClick={() => setSettingsVisible(prev => !prev)}
+                    >
+                        <IoSettings/>
                     </Button>
                 </div>
                 <Button
